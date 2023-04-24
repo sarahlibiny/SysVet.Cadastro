@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SysVet.Cadastro.Infra.Data.Entidades
+﻿namespace SysVet.Cadastro.Infra.Data.Entidades
 {
     public class Animal
     {
