@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using SysVet.Cadastro.Infra.Data.Entidades;
+using SysVet.Cadastro.Dominio.Entidades;
 
 namespace SysVet.Cadastro.Infra.Data.Repositorios
 {
