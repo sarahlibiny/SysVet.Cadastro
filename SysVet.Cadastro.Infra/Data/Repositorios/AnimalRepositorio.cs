@@ -2,11 +2,12 @@
 using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using SysVet.Cadastro.Infra.Data.Entidades;
+using SysVet.Cadastro.Dominio.Entidades;
+using SysVet.Cadastro.Dominio.Interfaces;
 
 namespace SysVet.Cadastro.Infra.Data.Repositorios
 {
-    public class AnimalRepositorio
+    public class AnimalRepositorio : IAnimalRepositorio
     {
         public IDbConnection _connection;
 
