@@ -3,13 +3,14 @@ using Microsoft.Extensions.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using SysVet.Cadastro.Dominio.Entidades;
+using SysVet.Cadastro.Dominio.Interfaces;
 
 namespace SysVet.Cadastro.Infra.Data.Repositorios
 {
-    public class TutorRepositotio
+    public class TutorRepositorio : ITutorRepositorio
     {
         public IDbConnection _connection;
-        public TutorRepositotio(IConfiguration configuration)
+        public TutorRepositorio(IConfiguration configuration)
         {
             _connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
         }
