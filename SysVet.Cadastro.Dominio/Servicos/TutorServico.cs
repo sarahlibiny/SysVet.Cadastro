@@ -5,36 +5,36 @@ namespace SysVet.Cadastro.Dominio.Servicos
 {
     public class TutorServico : ITutorServico
     {
-        private readonly ITutorRepositorio _TutorRepositorio;
+        private readonly ITutorRepositorio _tutorRepositorio;
 
         public TutorServico(ITutorRepositorio tutorRepositorio)
         {
-            _TutorRepositorio = tutorRepositorio;
+            _tutorRepositorio = tutorRepositorio;
         }
 
         public void Delete(int id)
         {
-            _TutorRepositorio.Delete(id);
+            _tutorRepositorio.Delete(id);
         }
 
         public List<Tutor> Get()
         {
-           return _TutorRepositorio.Get();
+           return _tutorRepositorio.Get();
         }
 
         public Tutor Get(int id)
         {
-            return _TutorRepositorio.Get(id);
+            return _tutorRepositorio.Get(id);
         }
 
         public void Insert(Tutor tutor)
         {
-           _TutorRepositorio.Insert(tutor);
+           _tutorRepositorio.Insert(tutor);
         }
 
         public void Update(Tutor tutor)
         {
-            _TutorRepositorio.Update(tutor);
+            _tutorRepositorio.Update(tutor);
         }
     }
 }

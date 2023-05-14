@@ -14,5 +14,10 @@ namespace SysVet.Cadastro.Api.Models.Requests
         {
             return new Tutor(Nome);
         }
+
+        public Tutor ConverterParaDominio(int id)
+        {
+            return new Tutor(id, Nome);
+        }
     }
 }

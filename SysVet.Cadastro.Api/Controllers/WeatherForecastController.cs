@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace SysVet.Cadastro.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("batata/[controller]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]

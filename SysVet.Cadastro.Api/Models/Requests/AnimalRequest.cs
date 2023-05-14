@@ -24,5 +24,10 @@ namespace SysVet.Cadastro.Api.Models.Requests
         {
             return new Animal(Nome, Raca, DataNascimento, TutorId);
         }
+
+        public Animal ConverterParaDominio(int id)
+        {
+            return new Animal(id, Nome, Raca, DataNascimento, TutorId);
+        }
     }
 }
