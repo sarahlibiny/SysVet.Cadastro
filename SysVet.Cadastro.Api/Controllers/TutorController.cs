@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SysVet.Cadastro.Api.Models.Requests;
 using SysVet.Cadastro.Api.Models.Responses;
-using SysVet.Cadastro.Dominio.Entidades;
 using SysVet.Cadastro.Dominio.Interfaces;
 
 namespace SysVet.Cadastro.Api.Controllers
