@@ -5,36 +5,36 @@ namespace SysVet.Cadastro.Dominio.Servicos
 {
     public class AnimalServico : IAnimalServico
     {
-        private readonly IAnimalRepositorio _AnimalRepositorio;
+        private readonly IAnimalRepositorio _animalRepositorio;
 
         public AnimalServico(IAnimalRepositorio animalRepositorio)
         {
-            _AnimalRepositorio = animalRepositorio;
+            _animalRepositorio = animalRepositorio;
         }
 
         public void Delete(int id)
         {
-            _AnimalRepositorio.Delete(id);
+            _animalRepositorio.Delete(id);
         }
 
         public List<Animal> Get()
         {
-           return _AnimalRepositorio.Get();
+           return _animalRepositorio.Get();
         }
 
         public Animal Get(int id)
         {
-           return _AnimalRepositorio.Get(id);
+           return _animalRepositorio.Get(id);
         }
 
         public void Insert(Animal animal)
         {
-            _AnimalRepositorio.Insert(animal);
+            _animalRepositorio.Insert(animal);
         }
 
         public void Update(Animal animal)
         {
-            _AnimalRepositorio.Update(animal);
+            _animalRepositorio.Update(animal);
         }
     }
 }
