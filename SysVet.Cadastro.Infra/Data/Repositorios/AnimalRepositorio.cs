@@ -30,7 +30,7 @@ namespace SysVet.Cadastro.Infra.Data.Repositorios
         public void Insert(Animal animal)
         {
             var query = "INSERT INTO Animal (Nome, Raça, DataNascimento, TutorId) VALUES (@Nome, @Raça, @DataNascimento, @TutorId)";
-            _connection.Execute(query, new { animal });
+            _connection.Execute(query, animal);
         }
 
         public void Update(Animal animal)
@@ -43,7 +43,7 @@ namespace SysVet.Cadastro.Infra.Data.Repositorios
                                 DataNascimento = @DataNascimento 
                             WHERE 
                                 Id = @id";
-            _connection.Execute(query, new { nome = animal.Nome, raca = animal.Raca, datanascimento = animal.DataNascimento, id = animal.Id });
+            _connection.Execute(query, animal);
         }
 
         public void Delete(int id)

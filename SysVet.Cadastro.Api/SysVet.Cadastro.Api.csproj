@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SysVet.Cadastro.Dominio\SysVet.Cadastro.Dominio.csproj" />
+    <ProjectReference Include="..\SysVet.Cadastro.Infra\SysVet.Cadastro.Infra.csproj" />
   </ItemGroup>
 
 </Project>
