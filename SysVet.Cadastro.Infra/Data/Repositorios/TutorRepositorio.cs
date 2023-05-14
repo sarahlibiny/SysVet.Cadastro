@@ -28,13 +28,13 @@ namespace SysVet.Cadastro.Infra.Data.Repositorios
         public void Insert(Tutor tutor)
         {
             var query = "INSERT INTO Tutor(Nome) VALUES (@Nome)";
-            _connection.Execute(query, new { tutor });
+            _connection.Execute(query, tutor);
         }
 
         public void Update(Tutor tutor)
         {
             var query = "UPDATE Tutor SET Nome = @nome WHERE Id = @id";
-            _connection.Execute(query, new { nome = tutor.Nome, id = tutor.Id });
+            _connection.Execute(query, tutor);
         }
 
         public void Delete(int id)
